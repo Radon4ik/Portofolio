@@ -1,0 +1,371 @@
+@import "reset.css";
+
+
+@font-face {
+
+    font-family: Libre_Franklin;
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/LibreFranklin-Bold.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+
+    font-family: Libre_Franklin;
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/LibreFranklin-Light.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+
+    font-family: Libre_Franklin;
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/LibreFranklin-Medium.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+
+    font-family: Libre_Franklin;
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/LibreFranklin-regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+
+    font-family: Libre_Franklin;
+    font-weight: 600;
+    font-style: normal;
+    src: url("../fonts/LibreFranklin-SemiBold.woff") format("woff");
+    font-display: swap;
+}
+
+body {
+    font-family: libre_Franklin, sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.header {
+    padding-top: 93px;
+    padding-bottom: 145px;
+}
+
+
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.header__list {
+    display: flex;
+    gap: 60px;
+}
+
+.header__logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header__link {
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.hero__container {
+    width: 700px;
+}
+
+.hero__title {
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+    margin-bottom: 26px;
+}
+
+.hero__text {
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 106px;
+}
+
+.hero__text--sm {
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+}
+
+.about {
+    padding-top: 93px;
+    padding-bottom: 115px;
+    background-color: #FFFFFF;
+}
+
+.about>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 76px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+
+.about__text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    text-align: justify;
+}
+
+.about__text:first-child {
+    padding-bottom: 20px;
+}
+
+.skills {
+    padding: 93px 0 135px;
+    background-color: #FFFAF2;
+}
+
+
+.skills__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    margin-bottom: 86px;
+}
+
+.skills__container {
+    display: flex;
+    gap: 123px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.skills__icon {
+    width: 350px;
+    height: 340px;
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.skills__item:first-child {
+    padding-bottom: 45px;
+}
+
+.skills__row {
+    display: flex;
+    gap: 140px;
+    align-items: center;
+    position: relative;
+}
+
+.skills__progressbar {
+    height: 24px;
+    width: 446px;
+    background-color: #F5D6AB;
+    position: absolute;
+    right: 10px;
+    overflow: hidden;
+}
+
+.skills__progressbar-bar {
+    background-color: #C66C49;
+    height: 100%;
+}
+
+.skills__key {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+}
+
+.skills__value {
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+}
+
+/* перепроверить все ниже */
+.portfolio {
+    padding-top: 93px;
+}
+
+.portfolio .container {
+    display: flex;
+    gap: 125px;
+
+}
+
+.portfolio__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    margin-bottom: 86px;
+}
+
+
+.portfolio__subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+    margin-bottom: 46px;
+}
+
+.portfolio__text {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    color: #333333;
+    margin-bottom: 250px;
+}
+
+.portfolio__img {
+    display: flex;
+    gap: 30px;
+    margin-top: 200px;
+
+}
+
+.portfolio__icon {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 350px;
+}
+
+.portfolio__icon:last-child {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+
+}
+
+.portfolio__picture {
+    width: 100%;
+
+}
+
+.btn {
+    text-align: center;
+    min-width: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #333333;
+    display: inline-block;
+    background-color: white;
+    border: none;
+    padding: 14px;
+
+}
+
+.btn__arrow--left {
+    transform: rotate(180deg);
+
+}
+
+
+.footer {
+    padding: 93px 0 70px;
+    background-color: #FFFAF2;
+}
+
+
+.footer__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    margin-bottom: 51px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+.footer__link {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.btn--up {
+    align-self: flex-end;
+    background-color: #FFFAF2;
+}
+
+.btn__arrow--up {
+    transform: rotate(270deg);
+}
