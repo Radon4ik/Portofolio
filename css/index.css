@@ -62,8 +62,8 @@ body {
 }
 
 .hero {
-    height: 100vh;
-    display: flex;
+    min-height: 100vh;
+    * display: flex;
     flex-direction: column;
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
@@ -162,10 +162,12 @@ body {
     line-height: 30px;
     color: #333333;
     text-align: justify;
+    padding-bottom: 20px;
+
 }
 
-.about__text:first-child {
-    padding-bottom: 20px;
+.about__text:last-child {
+    padding-bottom: 0;
 }
 
 .skills {
@@ -213,16 +215,14 @@ body {
 
 .skills__row {
     display: flex;
-    gap: 140px;
     align-items: center;
-    position: relative;
+    gap: 66px;
 }
 
 .skills__progressbar {
     height: 24px;
     width: 446px;
     background-color: #F5D6AB;
-    position: absolute;
     right: 10px;
     overflow: hidden;
 }
@@ -237,6 +237,7 @@ body {
     font-size: 18px;
     line-height: 25px;
     color: #333333;
+    width: 135px;
 }
 
 .skills__value {
@@ -245,15 +246,23 @@ body {
     color: #333333;
 }
 
-/* перепроверить все ниже */
 .portfolio {
     padding-top: 93px;
+    padding-bottom: 140px;
+
 }
 
-.portfolio .container {
+.portfolio__wrapper {
     display: flex;
     gap: 125px;
+    align-items: flex-end;
 
+}
+
+.portfolio__container {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
 }
 
 .portfolio__title {
@@ -278,13 +287,14 @@ body {
     line-height: 30px;
     text-align: justify;
     color: #333333;
-    margin-bottom: 250px;
+    margin-bottom: 10px;
+    flex-grow: 1;
 }
 
 .portfolio__img {
     display: flex;
     gap: 30px;
-    margin-top: 200px;
+    padding-top: 60px;
 
 }
 
@@ -325,7 +335,6 @@ body {
 
 }
 
-
 .footer {
     padding: 93px 0 70px;
     background-color: #FFFAF2;
@@ -345,8 +354,6 @@ body {
     justify-content: space-between;
     align-items: flex-start;
 }
-
-
 
 .footer__link {
     font-size: 18px;
